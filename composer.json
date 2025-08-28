@@ -1,5 +1,5 @@
 {
-    "name": "clayi-git/toastr",
+    "name": "clayi/toastr",
     "description": "A Laravel package for displaying toast notifications.",
     "keywords": [
         "clayi",
