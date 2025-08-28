@@ -1,0 +1,56 @@
+{
+    "name": "clayi/toastr",
+    "description": "A Laravel package for displaying toast notifications.",
+    "keywords": [
+        "clayi",
+        "laravel",
+        "toastr",
+        "notification",
+        "toast",
+        "alerts",
+        "messages",
+        "flash messages",
+        "pop-up",
+        "user interface",
+        "frontend"
+    ],
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Clayi",
+            "email": "support@clayi.com"
+        }
+    ],
+    "require": {
+        "php": ">=8.0",
+        "illuminate/session": ">=8.0",
+        "illuminate/support": ">=8.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Clayi\\Toastr\\": "src/"
+        },
+        "files": [
+            "src/Helpers.php"
+        ]
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true,
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Clayi\\Toastr\\ToastrServiceProvider"
+            ],
+            "aliases": {
+                "Toastr": "Clayi\\Toastr\\Facades\\Toastr"
+            }
+        }
+    },
+    "config": {
+        "sort-packages": true
+    }
+}
